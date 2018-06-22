@@ -15,6 +15,7 @@ html, body {
 
 .my-navbar {
   text-align: center;
+  
 }
 
 .my-navbar > li {
@@ -43,18 +44,13 @@ html, body {
 
 #logo{
   margin: 10px;
-  
-}
-#logo:hover{
-  size: 96%
-  transition-property: all;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-in-out;
 }
 
 .my-row {
   padding: 2px 0 2px 2px;
   background: gray;
+  border-top: 3px solid  rgb(14, 209, 209);
+  border-bottom: 3px solid  rgb(14, 209, 209);
 }
 
 i {
@@ -102,6 +98,8 @@ footer {
   margin-top: -2rem;
   position: relative;
   display: none;
+  border-top: 1px solid  rgb(14, 209, 209);
+  border-bottom: 1px solid  rgb(14, 209, 209);
 }
 .photo-grid-1 div img:hover + .caption {
   display: block;
