@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  background: #eeeded;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+
+.my-container {
+  min-height: 100%;
+   
+  
+}
+
+.my-navbar {
+  text-align: center;
+}
+
+.my-navbar > li {
+  display: inline-block;
+  padding-right: 100px;
+}
+
+.my-navbar > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.my-navbar > li > a.selected {
+  text-decoration: none;
+  color: rgb(14, 209, 209);
+  font-weight: 500;
+}
+.my-navbar > li > a:hover {
+  text-decoration: none;
+  color:  rgb(14, 209, 209);
+  font-weight: 600;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+#logo{
+  margin: 10px;
+  
+}
+#logo:hover{
+  size: 96%
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.my-row {
+  padding: 2px 0 2px 2px;
+  background: gray;
+}
+
+i {
+  font-size: 1.55rem;
+  color: white;
+  padding-right: 5px;
+  align-items: left;
+}
+a>i:hover {
+  font-size: 1.501rem;
+  text-decoration: none;
+  color:  rgb(14, 209, 209);
+  /* font-weight: 600; */
+  
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+  
+}
+
+footer {
+  background: gray;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  clear: both;
+}
+.photo-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.photo-grid-1 div img {
+  width: 100%;
+  margin: 5px 0;
+ 
+}
+.caption {
+  color: rgb(14, 209, 209);
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  background-color: gray;
+  height: 1.75rem;
+  margin-top: -2rem;
+  position: relative;
+  display: none;
+}
+.photo-grid-1 div img:hover + .caption {
+  display: block;
+  opacity: 0.8;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+
+}
+
+@media all and (min-width: 400px) {
+  .my-row {
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-between
+  }
+  .col-1-of-3 {
+    width: 20%;
+  }
+  .col-2-of-3 {
+    width: 60%;
+  }
+  .col-3-of-3 {
+    width: 20%;
+    align-items: left;
+    
+  }
+
+  .my-second-row {
+    display: flex;
+    background: #eeeded;
+    
+  }
+  .my-second-row > .col-1-of-3,.col-3-of-3  {
+    width: 10%;
+    padding: 0 10px;
+    background: gray;
+    color: white;
+    
+  }
+  .my-second-row > .col-2-of-3 {
+    width: 80%;
+  }
+
+}
