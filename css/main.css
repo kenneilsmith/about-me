@@ -7,10 +7,15 @@ html, body {
   height: 100%;
 }
 
+#home-container-main {
+  background: url("/img/pexels-photo-343299.jpeg") no-repeat;
+  /* background-size: cover;
+  background-position:  center; */
+  z-index: -10;
+}
+
 .my-container {
   min-height: 100%;
-   
-  
 }
 
 .my-navbar {
@@ -48,9 +53,13 @@ html, body {
 
 .my-row {
   padding: 2px 0 2px 2px;
-  background: gray;
+ background: gray;
   border-top: 3px solid  rgb(14, 209, 209);
   border-bottom: 3px solid  rgb(14, 209, 209);
+}
+
+.my-row#row-home{
+  background: rgba(128, 128, 128, 0.5);
 }
 
 i {
@@ -109,22 +118,95 @@ footer {
   transition-timing-function: ease-in-out;
 
 }
+/* .my-row {
+  display: block;
 
-@media all and (min-width: 400px) {
+
+} */
+.col-3-of-3 {
+  text-align: center;
+}
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-second-row {
+  width: 100%;
+  /* height: 50rem; */
+  color: rgb(14, 209, 209);
+  /* background: rgba(0, 0, 0, 0.4); */
+  /* text-align: center; */
+  margin: auto auto;
+  position: relative;
+ 
+}
+.welcome-container {
+  width: 60%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin: auto auto;
+  position: relative;
+  top: 50;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
+}
+
+.welcome-container img {
+  border-radius: 50%;
+  width:12rem;
+  height: 12rem;
+ 
+  position: relative;
+
+}
+.welcome-container h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  letter-spacing: 1rem;
+  font-size: 5rem;
+}
+.welcome-container p{
+  margin: 0;
+  padding: 25px 100px;
+  /* padding-left: 60px; */
+  text-align: center;
+  position: relative;
+  top: 18%;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+}
+.welcome-container h1:hover{
+  color: rgb(14, 209, 209);
+}
+
+
+
+
+
+
+
+
+@media all and (min-width: 769px) {
   .my-row {
     display: flex;
     align-items: center;
    
-    justify-content: space-between
+    justify-content: space-around;
   }
   .col-1-of-3 {
     width: 20%;
   }
   .col-2-of-3 {
-    width: 60%;
+    width: 50%;
   }
   .col-3-of-3 {
-    width: 20%;
+    width: 30%;
     align-items: left;
     
   }
@@ -137,12 +219,9 @@ footer {
   .my-second-row > .col-1-of-3,.col-3-of-3  {
     width: 10%;
     padding: 0 10px;
-    background: gray;
     color: white;
     
   }
-  .my-second-row > .col-2-of-3 {
-    width: 80%;
-  }
+
 
 }
