@@ -76,7 +76,7 @@ a>i:hover {
 =            Home page            =
 =============================================*/
 #home-container-main {
-  background: url("/img/pexels-photo-343299.jpeg") no-repeat;
+  background: url("../img/pexels-photo-343299.jpeg") no-repeat;
   /* background-size: cover;
   background-position:  center; */
   /* z-index: -10; */
