@@ -1,98 +1,170 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
-
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Damian Smith | About Me</title>
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="css/about-me-page.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="shortcut icon" type="image/png" href="img/icons/favicon.png"/>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
-
 <body>
-  <div class="my-container">
-    <div class="my-row">
-      <div class="my-col col-1-of-3">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="" id="logo">
-        </a>
-      </div>
+	<div id="wrapper">
+		<div id="banner-wrapper">
+			<header>
+				<div id="header-inner">
+					<a href="index.html" id="logo"></a>
+					<nav>
+						<a href="#" id="menu-icon"></a>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about-me.html" class="current">About Me</a></li>
+							<li><a href="photos.html">Photos</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<!--- Slider Start -->
+			<script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+			<div class="slide-wrap">
+				<section class="slider">
+					<ul class="slider1">
+						<li><img src="img/photo1.png"></li>
+						<li><img src="img/photo2.png"></li>
+						<li><img src="img/photo3.png"></li>
+					</ul>
+				</section>
+			</div>
+			<script type="text/javascript">
+				$('.slider1').bxSlider({
+					mode: 'fade',
+					captions: false,
+					auto:true,
+					pager:false,
 
-      <div class="my-col col-2-of-3">
-        <ul class="my-navbar">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about-me.html" class="selected">About Me</a>
-          </li>
-          <li>
-            <a href="photos.html">Photos</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+				});
+				$('.slider2').bxSlider({
+					pager:false,
+					captions: true,
+					maxSlides: 3,
+					minSlides: 1,
+					slideWidth: 230,
+					slideMargin: 10
+				});
+				$('.slider3').bxSlider({
+					mode: 'fade',
+					captions: false,
+					auto:true,
+					pager:false,
+					controls:false,
+				});
+			</script>
+			<!--- Slider End -->
+		</div>
+		<!-- Start Three Column Icons -->
+		<section class="one-third">
+			<div class="icon-wrap">
+				<td><i class="fa fa-male"></i></td>
+			</div>
+			<h3>Damian</h3>
+		</section>
+		<section class="one-third">
+			<div class="icon-wrap">
+				<td><i class="fa fa-female"></i></td>
+			</div>
+			<h3>Wife</h3>
+		</section>
+		<section class="one-third">
+			<div class="icon-wrap">
+				<td><i class="fa fa-child"></i></td>
+			</div>
+			<h3>Children</h3>
+		</section>
+		<!-- End Three Column Icons -->
+		<div class="clearfix-padding"></div>
 
-      <div class="my-col col-3-of-3">
-        <a href="#">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-    <div class="about-me">
-      <div class="about-me-col-1">
-        <h1>MEET DAMIAN SMITH</h1>
-        <H4>An Aspiring
-          <span id="dev">Software Developer</span>
-        </H4>
-        <hr>
+		<!-- Start Left Column and Sidebar Image -->
+		<section class="left-col">
+			<h3>About Me</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section class="side-bar">
+			<img src="img/photo4.jpg">
+		</section>
+		<!-- End  Left Column and Sidebar Image-->
+		<div class="clearfix-padding"></div>
+		<!-- Start One Third Padding -->
+		<section class="one-third-padding">
+			<h3>Spirituality</h3>
+			<img src="img/religion.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat .</p>
+		</section>
+		<section class="one-third-padding">
+			<h3>Family</h3>
+			<img src="img/family.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat .</p>
+		</section>
+		<section class="one-third-padding">
+			<h3>Friends</h3>
+			<img src="img/friends.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat .</p>
+		</section>
+		<!-- End One Third Padding -->
+	</div> <!-- End Wrapper -->
+	<div class="clearfix-padding"></div>
+	<!-- Start Footers -->
+	<footer>
+		<div id="banner-wrapper">
+			<div class="icon-text">
+				<div class="icon-text-icon">
+					<ul class="footer-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about-me.html">About Me</a></li>
+						<li><a href="#">Photos</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				<div class="icon-text-text">
+					<ul class="social">
+						<li><a href="mailto:email@website.com"><i class="fa fa-envelope-o"></i></a></li>
+						<li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="http://www.plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="http://www.twiiter.com"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<footer class="second">
+	<p>Copyright &copy; Damian Smith 2018</p>
+</footer>
+<!-- End Footers -->
 
-      </div>
-      <div class="about-me-col-2">
-        <div class="photo-box">
-          <img src="img/IMG_0905.png" alt="">
-        </div>
-        <div class="content-box">
-          <h3>Damian Smith</h3>
-          <h5>Student</h5>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita nesciunt maxime soluta incidunt ipsam et sunt
-            omnis facere dolores ad quod qui, quos esse vero, reiciendis impedit beatae dicta voluptatum reprehenderit velit
-            modi? Enim aspernatur quos ducimus vel, harum commodi quam, architecto minima libero atque accusantium doloribus
-            labore voluptatem, quia veritatis voluptas totam ratione quasi sit. Praesentium est laborum voluptatibus amet
-            veritatis. Voluptatibus iste impedit totam consectetur repellat dolorem consequatur fugiat voluptate perferendis
-            quae quidem laboriosam distinctio officia tenetur aut nihil earum itaque facere officiis autem cumque suscipit,
-            molestiae illum. Tempore quod distinctio laudantium incidunt libero dolore ut rerum sint!</p>
-        </div>
-
-
-      </div>
-
-
-    </div>
-
-
-  </div>
-  <!-- end container -->
-  <footer> Copyright &copy; 2018 Damian Smith</footer>
 </body>
-
 </html>

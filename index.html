@@ -1,86 +1,82 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
-
+  <title>Damian Smith | Home</title>
+  <link href="css/jquery.bxslider.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="css/home-page.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="shortcut icon" type="image/png" href="img/icons/favicon.png"/>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
-
 <body>
-  <div class="my-container" id="home-container-main">
-    <div class="my-row" id="row-home">
-      <div class="my-col col-1-of-3">
-        <a href="index.html">
-          <img src="img/logo.svg" alt="" id="logo">
-        </a>
-      </div>
-
-      <div class="my-col col-2-of-3">
-        <ul class="my-navbar">
-          <li>
-            <a href="index.html" class="selected">Home</a>
-          </li>
-          <li>
-            <a href="about-me.html">About Me</a>
-          </li>
-          <li>
-            <a href="photos.html">Photos</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="my-col col-3-of-3">
-        <a href="#">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-    <div class="home-second-row">
-      <!-- <div id="top">All About me</div> -->
-      <div class="welcome-container">
-
-        <h1>WELCOME</h1>
+  <div id="wrapper">
+    <div id="banner-wrapper">
+      <header>
+        <div id="header-inner">
+          <a href="index.html" id="logo"></a>
+          <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+              <li><a href="index.html"  class="current">Home</a></li>
+              <li><a href="about-me.html">About Me</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="welcome-wrap">
+        <section class="welcome-message">
+           <h1>Welcome</h1>
         <img src="img/DSC00864.JPG" alt="">
-
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint iure ea, debitis aut qui veniam cumque ut molestias
-          aliquam repudiandae iste velit nemo earum blanditiis porro voluptatum. Cupiditate, eveniet sit?</p>
-
+        aliquam repudiandae iste velit nemo earum blanditiis porro voluptatum. Cupiditate, eveniet sit?</p>
         <h4>
           <a href="about-me.html">Learn more about Damian Smith</a>
         </h4>
-
+          
+        </section>
+       
       </div>
-
-
     </div>
-
-
+ 
+  </div> <!-- End Wrapper -->
+  <!-- <div class="clearfix-padding"></div> -->
+  <!-- Start Footers -->
+  <footer>
+    <div id="banner-wrapper">
+      <div class="icon-text">
+        <div class="icon-text-icon">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="icon-text-text">
+          <ul class="social">
+            <li><a href="mailto:email@website.com"><i class="fa fa-envelope-o"></i></a></li>
+            <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="http://www.plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="http://www.twiiter.com"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="http://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
   </div>
-  <!-- end container -->
-  <footer> Copyright &copy; 2018 Damian Smith</footer>
-</body>
+</footer>
+<footer class="second">
+  <p>Copyright &copy; Damian Smith 2018</p>
+</footer>
+<!-- End Footers -->
 
+</body>
 </html>

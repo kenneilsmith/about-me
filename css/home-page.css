@@ -1,0 +1,54 @@
+
+.welcome-wrap {
+  background: url(../img/welcome-bg.jpeg) no-repeat center;
+  height: 50rem;
+  padding: 0;
+
+}
+.welcome-message{
+  max-width: 1200px;
+  background: url(img/welcome-bg.jpeg) no-repeat center;
+
+}
+.welcome-message h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 400%;
+  color: #fff;
+  padding-top: 3.125rem;
+}
+.welcome-message p {
+  text-align: center;
+  color: #fff;
+  width: 60%;
+  margin: 0 auto;
+}
+.welcome-message h4 {
+  text-align: center;
+  font-size: 150%;
+}
+.welcome-message img {
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+}
+.welcome-message a {
+  color: #666868;
+}
+.welcome-message a:hover {
+  color: #1fafab;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
