@@ -189,7 +189,7 @@ footer.second p {
 	nav:hover ul {
 		display: block;
 	}
-	nav ul, nav:active ul {
+	nav ul {
 		display: none;
 		z-index: 1000;
 		position: absolute;
